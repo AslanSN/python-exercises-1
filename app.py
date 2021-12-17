@@ -4,47 +4,56 @@ surnames = ['10', '10', 'juan', '@12', 'null', 'antonioPerezDelCarmen', 'abcdefg
 excuses = ['OMG?', 'Whats going on?', 'How much is it?', 'undefined', 'undefined']
 names = ['Jeferson', 'Matilda', 'R@fael', '1van', '1van', 'Pep3', 'Loquesea', 'Fel1berto', 'Pepit@', 'D@M']
 
-# 1 - crear una funcion que genere una excusa aleatoria con esos datos 
-def excuse_generator (names, surnames, excuses):
 
-    name =  names[random.randint( 0, len(names) - 1)]
-    surname = surnames[random.randint ( 0, len(surnames) - 1)]
-    excuse = excuses[random.randint ( 0, len(excuses) - 1)]
+def excuse_generator (names_list, surnames_list, excuses_list):
+
+    name =  names_list[random.randint( 0, len(names_list) - 1)]
+    surname = surnames_list[random.randint ( 0, len(surnames_list) - 1)]
+    excuse = excuses_list[random.randint ( 0, len(excuses_list) - 1)]
 
     print(f"My excuse is that {name} {surname}, {excuse}");
 
 excuse_generator(names, surnames, excuses)
 
-# 2 - creeis otra funcion que cuente el numero de repeticiones de letras en cada array
+
+'''
+!Counter of chars
+@param {list} list
+returns printed {dictionary} 'letter_iterations'
+'''
 def number_of_letters (list):
 
     letter_iterations = {}
 
     for item in list:
         for letter in item:
-            if letter.lower() in letter_iterations:
-                letter_iterations[letter.lower()] += 1
-            else :
-                letter_iterations[letter.lower()] = 1
+            letter_iterations[letter.upper()] = letter_iterations.get(letter.upper(), 0) + 1
 
-    print(f"Dictionary of number of letters: {letter_iterations}")
+    print(f"Dictionary of number of letters: {dict(sorted(letter_iterations.items()))}")
 
 number_of_letters(names)
 number_of_letters(surnames)
 number_of_letters(excuses)
 
 
-# 3 - suprimir repeticiones en un array y devolver el array sin la repeticion
-def no_repetitions (list):
+''' 
+!Convertor
+@params {list}
+returns setted list
+'''
+no_more_repetitions = lambda list : set(list)
 
-    print(f'List without repetitions {set(list)}')
+print(f"List without repetitions: {no_more_repetitions(names)}")
+print(f"List without repetitions: {no_more_repetitions(surnames)}")
+print(f"List without repetitions: {no_more_repetitions(excuses)}")
 
-no_repetitions(names)
-no_repetitions(surnames)
-no_repetitions(excuses)
 
-# 4 - function que invierta todos los valores de el array
+'''
 
+!Inverter
+@params {list}
+returns {list} inverted by Items
+'''
 def inverted_list (list):
 
     print(f'Inverted list: {(list[::-1])}')
