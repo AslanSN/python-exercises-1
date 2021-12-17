@@ -4,7 +4,13 @@ surnames = ['10', '10', 'juan', '@12', 'null', 'antonioPerezDelCarmen', 'abcdefg
 excuses = ['OMG?', 'Whats going on?', 'How much is it?', 'undefined', 'undefined']
 names = ['Jeferson', 'Matilda', 'R@fael', '1van', '1van', 'Pep3', 'Loquesea', 'Fel1berto', 'Pepit@', 'D@M']
 
-
+'''
+!Creator
+@params {list}
+@params {list}
+@params {list}
+@retuns {string} of random excuses
+'''
 def excuse_generator (names_list, surnames_list, excuses_list):
 
     name =  names_list[random.randint( 0, len(names_list) - 1)]
@@ -19,7 +25,7 @@ excuse_generator(names, surnames, excuses)
 '''
 !Counter of chars
 @param {list} list
-returns printed {dictionary} 'letter_iterations'
+@returns printed {dictionary} 'letter_iterations'
 '''
 def number_of_letters (list):
 
@@ -39,7 +45,7 @@ number_of_letters(excuses)
 ''' 
 !Convertor
 @params {list}
-returns setted list
+@returns setted list
 '''
 no_more_repetitions = lambda list : set(list)
 
@@ -52,13 +58,11 @@ print(f"List without repetitions: {no_more_repetitions(excuses)}")
 
 !Inverter
 @params {list}
-returns {list} inverted by Items
+@returns {list} inverted by Items
 '''
-def inverted_list (list):
+inverted_list = lambda list: list[::-1]
 
-    print(f'Inverted list: {(list[::-1])}')
-
-inverted_list(names)
-inverted_list(surnames)
-inverted_list(excuses)
+print(f'Inverted list: {inverted_list(names)}')
+print(f'Inverted list: {inverted_list(surnames)}')
+print(f'Inverted list: {inverted_list(excuses)}')
 
