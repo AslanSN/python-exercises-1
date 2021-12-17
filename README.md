@@ -79,7 +79,7 @@ List without repetitions: {'Loquesea', 'Pepit@', '1van', 'Fel1berto', 'D@M', 'R@
 **My Code:**
 
 As the previous exercise I considered to use a `lambda` function due to the very little code needed. 
-I used a `Python` shortcut to iterate it backwards. `list[::-1]` understands that you are asking him to iterate the array like this `list[0:list.len()-1:-1]`. 
+I used a `Python` shortcut to iterate it backwards. `list[::-1]` understands that you are asking him to iterate the array like this `list[0:list.len():-1]`. 
 - The first number sets the item id departure.
 	-It interprets that should be the first item of the array.
 - The middle one indicates up to which item it should go.  
