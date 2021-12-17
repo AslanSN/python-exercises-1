@@ -17,7 +17,8 @@ def excuse_generator (names_list, surnames_list, excuses_list):
     surname = surnames_list[random.randint ( 0, len(surnames_list) - 1)]
     excuse = excuses_list[random.randint ( 0, len(excuses_list) - 1)]
 
-    print(f"My excuse is that {name} {surname}, {excuse}");
+    print(f"My excuse is that {name} {surname}, {excuse}")
+    print("\n ----------------------------------------------- \n")
 
 excuse_generator(names, surnames, excuses)
 
@@ -40,7 +41,7 @@ def number_of_letters (list):
 number_of_letters(names)
 number_of_letters(surnames)
 number_of_letters(excuses)
-
+print("\n ----------------------------------------------- \n")
 
 ''' 
 !Convertor
@@ -52,7 +53,7 @@ no_more_repetitions = lambda list : set(list)
 print(f"List without repetitions: {no_more_repetitions(names)}")
 print(f"List without repetitions: {no_more_repetitions(surnames)}")
 print(f"List without repetitions: {no_more_repetitions(excuses)}")
-
+print("\n ----------------------------------------------- \n")
 
 '''
 
@@ -65,4 +66,4 @@ inverted_list = lambda list: list[::-1]
 print(f'Inverted list: {inverted_list(names)}')
 print(f'Inverted list: {inverted_list(surnames)}')
 print(f'Inverted list: {inverted_list(excuses)}')
-
+print("\n ----------------------------------------------- \n")
