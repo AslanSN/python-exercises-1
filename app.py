@@ -4,6 +4,8 @@ surnames = ['10', '10', 'juan', '@12', 'null', 'antonioPerezDelCarmen', 'abcdefg
 excuses = ['OMG?', 'Whats going on?', 'How much is it?', 'undefined', 'undefined']
 names = ['Jeferson', 'Matilda', 'R@fael', '1van', '1van', 'Pep3', 'Loquesea', 'Fel1berto', 'Pepit@', 'D@M']
 
+print("Exercise 1")
+print("\n ----------------------------------------------- \n")
 '''
 !Creator
 @params {list}
@@ -18,11 +20,12 @@ def excuse_generator (names_list, surnames_list, excuses_list):
     excuse = excuses_list[random.randint ( 0, len(excuses_list) - 1)]
 
     print(f"My excuse is that {name} {surname}, {excuse}")
-    print("\n ----------------------------------------------- \n")
+    
 
 excuse_generator(names, surnames, excuses)
 
 
+print("Exercise 2")
 '''
 !Counter of chars
 @param {list} list
@@ -43,6 +46,8 @@ number_of_letters(surnames)
 number_of_letters(excuses)
 print("\n ----------------------------------------------- \n")
 
+
+print("Exercise 3")
 ''' 
 !Convertor
 @params {list}
@@ -55,8 +60,9 @@ print(f"List without repetitions: {no_more_repetitions(surnames)}")
 print(f"List without repetitions: {no_more_repetitions(excuses)}")
 print("\n ----------------------------------------------- \n")
 
-'''
 
+print("Exercise 4")
+'''
 !Inverter
 @params {list}
 @returns {list} inverted by Items
