@@ -81,11 +81,17 @@ List without repetitions: {'Loquesea', 'Pepit@', '1van', 'Fel1berto', 'D@M', 'R@
 As the previous exercise I considered to use a `lambda` function due to the very little code needed. 
 I used a `Python` shortcut to iterate it backwards. `list[::-1]` understands that you are asking him to iterate the array like this `list[0:list.len():-1]`. 
 - The first number sets the item id departure.
+
 	-It interprets that should be the first item of the array.
+	
 - The middle one indicates up to which item it should go.  
+
 	-It understands that is the whole list what you want to loop.
+	
 - The last number sets up of wich items the iteration must jump, on this one is each item so is one at a time. So how you want to loop it.
+
 	-In this case we are telling him to iterate it in reverse!
+	
 ```Python
 inverted_list = lambda list: list[::-1]
 ```
