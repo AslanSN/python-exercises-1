@@ -4,8 +4,9 @@ surnames = ['10', '10', 'juan', '@12', 'null', 'antonioPerezDelCarmen', 'abcdefg
 excuses = ['OMG?', 'Whats going on?', 'How much is it?', 'undefined', 'undefined']
 names = ['Jeferson', 'Matilda', 'R@fael', '1van', '1van', 'Pep3', 'Loquesea', 'Fel1berto', 'Pepit@', 'D@M']
 
-print("Exercise 1")
+
 print("\n ----------------------------------------------- \n")
+print("Exercise 1")
 '''
 !Creator
 @params {list}
