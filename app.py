@@ -21,7 +21,7 @@ def excuse_generator (names_list, surnames_list, excuses_list):
     excuse = excuses_list[random.randint ( 0, len(excuses_list) - 1)]
 
     print(f"My excuse is that {name} {surname}, {excuse}")
-    
+    print("\n ----------------------------------------------- \n")
 
 excuse_generator(names, surnames, excuses)
 
