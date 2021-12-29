@@ -1,4 +1,3 @@
-
 ## Python Exercises
 #### Importing
 ```Python
